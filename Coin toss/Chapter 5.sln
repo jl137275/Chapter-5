@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Coin Toss", "Chapter 5\Coin Toss.vbproj", "{6290433D-0A31-4340-8A1C-BFC75463F56F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CoinToss", "Chapter 5\CoinToss.vbproj", "{6290433D-0A31-4340-8A1C-BFC75463F56F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RockPaperScissors", "RockPaperScissors\RockPaperScissors.vbproj", "{233AA00F-20E3-4A77-9701-02950DD1A2C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6290433D-0A31-4340-8A1C-BFC75463F56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6290433D-0A31-4340-8A1C-BFC75463F56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6290433D-0A31-4340-8A1C-BFC75463F56F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233AA00F-20E3-4A77-9701-02950DD1A2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233AA00F-20E3-4A77-9701-02950DD1A2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233AA00F-20E3-4A77-9701-02950DD1A2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233AA00F-20E3-4A77-9701-02950DD1A2C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
