@@ -22,51 +22,51 @@ Partial Class RockPaperScissors
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RockRadioButton = New System.Windows.Forms.RadioButton()
+        Me.PaperRadioButton = New System.Windows.Forms.RadioButton()
+        Me.ScissorsRadioButton = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblPlayerWins = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblCPU = New System.Windows.Forms.Label()
+        Me.lblresult = New System.Windows.Forms.Label()
         Me.btnPlayAgain = New System.Windows.Forms.Button()
         Me.btnShoot = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'RadioButton1
+        'RockRadioButton
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(89, 51)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RockRadioButton.AutoSize = True
+        Me.RockRadioButton.Location = New System.Drawing.Point(175, 49)
+        Me.RockRadioButton.Name = "RockRadioButton"
+        Me.RockRadioButton.Size = New System.Drawing.Size(51, 17)
+        Me.RockRadioButton.TabIndex = 0
+        Me.RockRadioButton.TabStop = True
+        Me.RockRadioButton.Text = "Rock"
+        Me.RockRadioButton.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'PaperRadioButton
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(89, 86)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.PaperRadioButton.AutoSize = True
+        Me.PaperRadioButton.Location = New System.Drawing.Point(173, 82)
+        Me.PaperRadioButton.Name = "PaperRadioButton"
+        Me.PaperRadioButton.Size = New System.Drawing.Size(53, 17)
+        Me.PaperRadioButton.TabIndex = 1
+        Me.PaperRadioButton.TabStop = True
+        Me.PaperRadioButton.Text = "Paper"
+        Me.PaperRadioButton.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'ScissorsRadioButton
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(89, 124)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.ScissorsRadioButton.AutoSize = True
+        Me.ScissorsRadioButton.Location = New System.Drawing.Point(173, 123)
+        Me.ScissorsRadioButton.Name = "ScissorsRadioButton"
+        Me.ScissorsRadioButton.Size = New System.Drawing.Size(64, 17)
+        Me.ScissorsRadioButton.TabIndex = 2
+        Me.ScissorsRadioButton.TabStop = True
+        Me.ScissorsRadioButton.Text = "Scissors"
+        Me.ScissorsRadioButton.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -94,21 +94,21 @@ Partial Class RockPaperScissors
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "CPU Wins"
         '
-        'Label4
+        'lblCPU
         '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(310, 171)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(100, 23)
-        Me.Label4.TabIndex = 6
+        Me.lblCPU.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblCPU.Location = New System.Drawing.Point(310, 171)
+        Me.lblCPU.Name = "lblCPU"
+        Me.lblCPU.Size = New System.Drawing.Size(100, 23)
+        Me.lblCPU.TabIndex = 6
         '
-        'Label2
+        'lblresult
         '
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Location = New System.Drawing.Point(89, 232)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(254, 23)
-        Me.Label2.TabIndex = 7
+        Me.lblresult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblresult.Location = New System.Drawing.Point(89, 232)
+        Me.lblresult.Name = "lblresult"
+        Me.lblresult.Size = New System.Drawing.Size(254, 23)
+        Me.lblresult.TabIndex = 7
         '
         'btnPlayAgain
         '
@@ -145,28 +145,28 @@ Partial Class RockPaperScissors
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnShoot)
         Me.Controls.Add(Me.btnPlayAgain)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblresult)
+        Me.Controls.Add(Me.lblCPU)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.lblPlayerWins)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.ScissorsRadioButton)
+        Me.Controls.Add(Me.PaperRadioButton)
+        Me.Controls.Add(Me.RockRadioButton)
         Me.Name = "RockPaperScissors"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
+    Friend WithEvents RockRadioButton As System.Windows.Forms.RadioButton
+    Friend WithEvents PaperRadioButton As System.Windows.Forms.RadioButton
+    Friend WithEvents ScissorsRadioButton As System.Windows.Forms.RadioButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents lblPlayerWins As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lblCPU As System.Windows.Forms.Label
+    Friend WithEvents lblresult As System.Windows.Forms.Label
     Friend WithEvents btnPlayAgain As System.Windows.Forms.Button
     Friend WithEvents btnShoot As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button

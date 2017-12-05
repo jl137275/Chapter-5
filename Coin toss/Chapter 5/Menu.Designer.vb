@@ -23,6 +23,7 @@ Partial Class Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnCoinToss = New System.Windows.Forms.Button()
+        Me.btnRockPaperScissors = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCoinToss
@@ -34,11 +35,21 @@ Partial Class Menu
         Me.btnCoinToss.Text = "Coin Toss"
         Me.btnCoinToss.UseVisualStyleBackColor = True
         '
+        'btnRockPaperScissors
+        '
+        Me.btnRockPaperScissors.Location = New System.Drawing.Point(98, 66)
+        Me.btnRockPaperScissors.Name = "btnRockPaperScissors"
+        Me.btnRockPaperScissors.Size = New System.Drawing.Size(75, 38)
+        Me.btnRockPaperScissors.TabIndex = 1
+        Me.btnRockPaperScissors.Text = "Rock Paper Scissors"
+        Me.btnRockPaperScissors.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.btnRockPaperScissors)
         Me.Controls.Add(Me.btnCoinToss)
         Me.Name = "Menu"
         Me.Text = "Menu"
@@ -46,4 +57,5 @@ Partial Class Menu
 
     End Sub
     Friend WithEvents btnCoinToss As System.Windows.Forms.Button
+    Friend WithEvents btnRockPaperScissors As System.Windows.Forms.Button
 End Class

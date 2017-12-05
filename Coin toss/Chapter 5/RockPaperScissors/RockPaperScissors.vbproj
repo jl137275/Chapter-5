@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6290433D-0A31-4340-8A1C-BFC75463F56F}</ProjectGuid>
+    <ProjectGuid>{233AA00F-20E3-4A77-9701-02950DD1A2C5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Chapter_5.My.MyApplication</StartupObject>
-    <RootNamespace>Chapter_5</RootNamespace>
-    <AssemblyName>Chapter 5</AssemblyName>
+    <StartupObject>RockPaperScissors.My.MyApplication</StartupObject>
+    <RootNamespace>RockPaperScissors</RootNamespace>
+    <AssemblyName>RockPaperScissors</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Chapter 5.xml</DocumentationFile>
+    <DocumentationFile>RockPaperScissors.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Chapter 5.xml</DocumentationFile>
+    <DocumentationFile>RockPaperScissors.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -70,17 +70,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\Chapter-5\Coin toss.Designer.vb">
-      <DependentUpon>Coin toss.vb</DependentUpon>
-    </Compile>
-    <Compile Include="..\..\..\Chapter-5\Coin toss.vb">
+    <Compile Include="RockPaperScissors.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="C.vb" />
-    <Compile Include="Menu.Designer.vb">
-      <DependentUpon>Menu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Menu.vb">
+    <Compile Include="RockPaperScissors.Designer.vb">
+      <DependentUpon>RockPaperScissors.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -98,32 +92,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RockPaperScissors.Designer.vb">
-      <DependentUpon>RockPaperScissors.vb</DependentUpon>
-    </Compile>
-    <Compile Include="RockPaperScissors.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\..\Chapter-5\Coin toss.resx">
-      <DependentUpon>Coin toss.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="RockPaperScissors.resx">
-      <DependentUpon>RockPaperScissors.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -134,12 +112,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\heads.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tails.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

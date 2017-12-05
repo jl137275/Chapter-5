@@ -1,0 +1,4 @@
+﻿
+Class C
+
+End Class
