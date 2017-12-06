@@ -9,4 +9,9 @@
         Dim Box = New RockPaperScissors()
         Box.ShowDialog()
     End Sub
+
+    Private Sub btnRaceCarGame_Click(sender As Object, e As EventArgs) Handles btnRaceCarGame.Click
+        Dim box = New RaceCarGame()
+        box.ShowDialog()
+    End Sub
 End Class

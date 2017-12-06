@@ -24,6 +24,7 @@ Partial Class Menu
     Private Sub InitializeComponent()
         Me.btnCoinToss = New System.Windows.Forms.Button()
         Me.btnRockPaperScissors = New System.Windows.Forms.Button()
+        Me.btnRaceCarGame = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCoinToss
@@ -44,11 +45,21 @@ Partial Class Menu
         Me.btnRockPaperScissors.Text = "Rock Paper Scissors"
         Me.btnRockPaperScissors.UseVisualStyleBackColor = True
         '
+        'btnRaceCarGame
+        '
+        Me.btnRaceCarGame.Location = New System.Drawing.Point(84, 110)
+        Me.btnRaceCarGame.Name = "btnRaceCarGame"
+        Me.btnRaceCarGame.Size = New System.Drawing.Size(89, 36)
+        Me.btnRaceCarGame.TabIndex = 2
+        Me.btnRaceCarGame.Text = "RaceCarGame"
+        Me.btnRaceCarGame.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.btnRaceCarGame)
         Me.Controls.Add(Me.btnRockPaperScissors)
         Me.Controls.Add(Me.btnCoinToss)
         Me.Name = "Menu"
@@ -58,4 +69,5 @@ Partial Class Menu
     End Sub
     Friend WithEvents btnCoinToss As System.Windows.Forms.Button
     Friend WithEvents btnRockPaperScissors As System.Windows.Forms.Button
+    Friend WithEvents btnRaceCarGame As System.Windows.Forms.Button
 End Class
