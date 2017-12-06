@@ -77,6 +77,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="C.vb" />
+    <Compile Include="DistanceCalculator.Designer.vb">
+      <DependentUpon>DistanceCalculator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceCalculator.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Menu.Designer.vb">
       <DependentUpon>Menu.vb</DependentUpon>
     </Compile>
@@ -110,10 +116,19 @@
     <Compile Include="RockPaperScissors.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SumOfNumbers.Designer.vb">
+      <DependentUpon>SumOfNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SumOfNumbers.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\..\..\Chapter-5\Coin toss.resx">
       <DependentUpon>Coin toss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceCalculator.resx">
+      <DependentUpon>DistanceCalculator.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.vb</DependentUpon>
@@ -129,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumOfNumbers.resx">
+      <DependentUpon>SumOfNumbers.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
