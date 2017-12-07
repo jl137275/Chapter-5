@@ -26,6 +26,7 @@ Partial Class Menu
         Me.btnRockPaperScissors = New System.Windows.Forms.Button()
         Me.btnRaceCarGame = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCoinToss
@@ -52,7 +53,7 @@ Partial Class Menu
         Me.btnRaceCarGame.Name = "btnRaceCarGame"
         Me.btnRaceCarGame.Size = New System.Drawing.Size(102, 36)
         Me.btnRaceCarGame.TabIndex = 2
-        Me.btnRaceCarGame.Text = "RaceCarGame"
+        Me.btnRaceCarGame.Text = "Race Car Game"
         Me.btnRaceCarGame.UseVisualStyleBackColor = True
         '
         'Button1
@@ -61,14 +62,24 @@ Partial Class Menu
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(102, 43)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "SumOfNumbers"
+        Me.Button1.Text = "Sum Of Numbers"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(98, 201)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 40)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Distance Calculator"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRaceCarGame)
         Me.Controls.Add(Me.btnRockPaperScissors)
@@ -82,4 +93,5 @@ Partial Class Menu
     Friend WithEvents btnRockPaperScissors As System.Windows.Forms.Button
     Friend WithEvents btnRaceCarGame As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
