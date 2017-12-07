@@ -1,12 +1,12 @@
 ﻿Public Class DistanceCalculator
 
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
-        Dim dbldistanceTraveled
-        Dim dblX = 0
+        Dim dbldistanceTraveled As Double
+        Dim dblX As Double = 0
         Do While dblX < CDbl(txtHours.Text)
             dblX = dblX + 1
-            dbldistanceTraveled = (txtSpeed.Text) * dblX
-            listResults.Items.Add(dblX + "         " + dbldistanceTraveled)
+            dbldistanceTraveled = CDbl(txtSpeed.Text) * dblX
+            listResults.Items.Add(dblX.ToString + "         " + dbldistanceTraveled.ToString)
         Loop
 
     End Sub
