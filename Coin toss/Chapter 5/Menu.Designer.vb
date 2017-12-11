@@ -27,6 +27,7 @@ Partial Class Menu
         Me.btnRaceCarGame = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPopulation = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCoinToss
@@ -74,11 +75,21 @@ Partial Class Menu
         Me.Button2.Text = "Distance Calculator"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'btnPopulation
+        '
+        Me.btnPopulation.Location = New System.Drawing.Point(98, 256)
+        Me.btnPopulation.Name = "btnPopulation"
+        Me.btnPopulation.Size = New System.Drawing.Size(75, 23)
+        Me.btnPopulation.TabIndex = 5
+        Me.btnPopulation.Text = "Population"
+        Me.btnPopulation.UseVisualStyleBackColor = True
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 304)
+        Me.Controls.Add(Me.btnPopulation)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRaceCarGame)
@@ -94,4 +105,5 @@ Partial Class Menu
     Friend WithEvents btnRaceCarGame As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnPopulation As System.Windows.Forms.Button
 End Class
