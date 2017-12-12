@@ -154,7 +154,7 @@ Partial Class RockPaperScissors
         Me.Controls.Add(Me.PaperRadioButton)
         Me.Controls.Add(Me.RockRadioButton)
         Me.Name = "RockPaperScissors"
-        Me.Text = "Form1"
+        Me.Text = "Rock Paper Scissors"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
