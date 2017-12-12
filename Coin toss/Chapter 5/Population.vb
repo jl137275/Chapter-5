@@ -4,7 +4,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
         Dim intcount As Integer
         Dim dbltotal As Double
         lstOutput.Items.Add("Day Approximate Population")
@@ -12,11 +12,11 @@
         dbltotal = 2
         intcount = 1
 
-        lstOutput.Items.Add(intcount.ToString + " " + )
+        lstOutput.Items.Add(intcount.ToString + " " + dbltotal.ToString)
 
         For intcount = intcount + 1 To cboDays.Text
-            dbltotal = (CDbl(txtIncreasePct.Text * dbltotal))
-            lstOutput.Items.Add(intcount.ToString + "")
+            dbltotal = (CDbl(txtIncreasePct.Text * dbltotal) / 100) + dbltotal
+            lstOutput.Items.Add(intcount.ToString + " " + dbltotal.ToString)
         Next
 
     End Sub
