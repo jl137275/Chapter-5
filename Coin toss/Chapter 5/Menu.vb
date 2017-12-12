@@ -29,4 +29,9 @@
         Dim box = New Population()
         box.ShowDialog()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim box = New RandomNumberGuessingGame()
+        box.ShowDialog()
+    End Sub
 End Class

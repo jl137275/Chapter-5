@@ -116,6 +116,12 @@
     <Compile Include="RaceCarGame.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RandomNumberGuessingGame.Designer.vb">
+      <DependentUpon>RandomNumberGuessingGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RandomNumberGuessingGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RockPaperScissors.Designer.vb">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RaceCarGame.resx">
       <DependentUpon>RaceCarGame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomNumberGuessingGame.resx">
+      <DependentUpon>RandomNumberGuessingGame.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RockPaperScissors.resx">
       <DependentUpon>RockPaperScissors.vb</DependentUpon>
